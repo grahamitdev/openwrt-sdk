@@ -1,0 +1,10 @@
+prefix=/home/z/shuncom_gatewayQca4531/staging_dir/host
+exec_prefix=/home/z/shuncom_gatewayQca4531/staging_dir/host
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.0.13
+Libs: -lffi
+Cflags:

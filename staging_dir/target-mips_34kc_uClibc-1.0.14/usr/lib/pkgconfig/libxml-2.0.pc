@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.9.2
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private:   -L/home/z/shuncom_gatewayQca4531/staging_dir/target-mips_34kc_uClibc-1.0.14/usr/lib -lz   -lm  
+Cflags: -I${includedir}/libxml2 

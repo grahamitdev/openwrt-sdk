@@ -1,0 +1,10 @@
+bnep.ko
+btusb.ko
+evdev.ko
+hid.ko
+hidp.ko
+input-core.ko
+nls_base.ko
+rfcomm.ko
+usb-common.ko
+usbcore.ko
