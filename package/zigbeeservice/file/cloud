@@ -1,0 +1,5 @@
+config arguments
+	option port '6009'
+	option address '121.41.24.34'
+	option encryption '1'
+

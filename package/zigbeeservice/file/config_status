@@ -1,0 +1,19 @@
+#!/bin/sh /etc/rc.common
+
+START=85
+USE_PROCD=1
+NAME=config_status
+
+start_service() {
+	procd_open_instance
+  sh /usr/bin/zha_config &
+	procd_close_instance
+}
+
+stop() {
+	echo hellow
+}
+
+#/sbin/zigbeeservice_test &
+#/bin/discover_gateway &
+

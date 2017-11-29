@@ -1,0 +1,23 @@
+
+uci delete network.lan.ip6assign
+uci delete network.lan.ipaddr
+uci delete network.lan.netmask
+uci delete network.lan.type
+uci delete network.lan.force_link
+uci set network.lan.proto=dhcp
+uci set wireless.@wifi-iface[0].encryption=psk2
+uci set wireless.@wifi-iface[0].key=339339686617
+uci set wireless.@wifi-iface[0].ssid=HIWIFI-1FD0BC
+uci set wireless.@wifi-iface[0].mode=sta
+
+echo "wireless set over"
+
+
+
+
+
+uci commit network
+uci commit wireless
+
+/etc/init.d/network restart
+
