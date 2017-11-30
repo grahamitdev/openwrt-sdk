@@ -1,0 +1,9 @@
+Package: zigbeeservice
+Version: 1
+Depends: libc, libmosquitto, libcyassl, libpthread, librt, libubus, liblua, libblobmsg-json, libuci, libsqlite3, libubox, libustream-cyassl, libjson-c, jshn, libopenssl
+Source: package/zigbeeservice
+License: GPLv2 GPLv2+
+Section: net
+Architecture: ar71xx
+Installed-Size: 510571
+Description:  This package is a bridge connectting a Zigbee device through RS-232 serial port

@@ -1,0 +1,55 @@
+Source-Makefile: package/hello_ubus/Makefile
+Package: hello_ubus
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libmosquitto +libcyassl +libpthread +librt +libubus +liblua +libblobmsg-json + libuci +libsqlite3 +libubox +libustream-cyassl +libjson-c +jshn +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: ubus demo(hello work)
+Maintainer: 
+Source: 
+Type: ipkg
+Description: 	hello ubus
+
+@@
+
+
+Source-Makefile: package/helloworld/Makefile
+Package: helloworld
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: application
+Category: app
+Title: helloworld -- prints a snarky message.
+Maintainer: 
+Source: 
+Type: ipkg
+Description:         It is walter first package demo.
+
+@@
+
+
+Source-Makefile: package/zigbeeservice/Makefile
+Package: zigbeeservice
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libmosquitto +libcyassl +libpthread +librt +libubus +liblua +libblobmsg-json + libuci +libsqlite3 +libubox +libustream-cyassl +libjson-c +jshn +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: zha gateway
+Maintainer: 
+Source: 
+License: GPLv2 GPLv2+
+Type: ipkg
+Description:  This package is a bridge connectting a Zigbee device through RS-232 serial port
+
+@@
+
+

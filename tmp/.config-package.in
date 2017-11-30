@@ -1,0 +1,80 @@
+menuconfig IMAGEOPT
+	bool "Image configuration"
+	default n
+source "package/*/image-config.in"
+menu "app"
+
+	config PACKAGE_helloworld
+		tristate "helloworld........................ helloworld -- prints a snarky message."
+		default y if DEFAULT_helloworld
+		default m if ALL
+		select PACKAGE_libpthread if USE_GLIBC
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libc
+		select PACKAGE_libssp if SSP_SUPPORT
+		help
+		 It is walter first package demo.
+		 
+
+endmenu
+
+menu "Network"
+
+	config PACKAGE_zigbeeservice
+		tristate "zigbeeservice................................................ zha gateway"
+		default y if DEFAULT_zigbeeservice
+		default m if ALL
+		select PACKAGE_libopenssl
+		select PACKAGE_librt
+		select PACKAGE_liblua
+		select PACKAGE_libustream-cyassl
+		select PACKAGE_libjson-c
+		select PACKAGE_libc
+		select PACKAGE_libubox
+		select PACKAGE_libcyassl
+		select PACKAGE_libsqlite3
+		select PACKAGE_libpthread
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libmosquitto
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libblobmsg-json
+		select PACKAGE_libubus
+		select PACKAGE_jshn
+		select PACKAGE_libpthread if USE_GLIBC
+		depends on PACKAGE_libuci
+		help
+		 This package is a bridge connectting a Zigbee device through RS-232 serial port
+		 
+
+endmenu
+
+menu "Utilities"
+
+	config PACKAGE_hello_ubus
+		tristate "hello_ubus......................................... ubus demo(hello work)"
+		default y if DEFAULT_hello_ubus
+		default m if ALL
+		select PACKAGE_libopenssl
+		select PACKAGE_librt
+		select PACKAGE_liblua
+		select PACKAGE_libustream-cyassl
+		select PACKAGE_libc
+		select PACKAGE_libjson-c
+		select PACKAGE_libubox
+		select PACKAGE_libsqlite3
+		select PACKAGE_libcyassl
+		select PACKAGE_libpthread
+		select PACKAGE_librt if USE_GLIBC
+		select PACKAGE_libmosquitto
+		select PACKAGE_libssp if SSP_SUPPORT
+		select PACKAGE_libubus
+		select PACKAGE_libblobmsg-json
+		select PACKAGE_jshn
+		select PACKAGE_libpthread if USE_GLIBC
+		depends on PACKAGE_libuci
+		help
+		 hello ubus
+		 
+
+endmenu
+

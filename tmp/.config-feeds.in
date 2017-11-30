@@ -1,0 +1,234 @@
+	config FEED_base
+		bool "Enable feed base"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"base\" feed at git@192.168.0.48:shuncom_gatewayQca4531.git.
+
+	config FEED_packages
+		bool "Enable feed packages"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"packages\" feed at ../qca/feeds/packages.
+
+	config FEED_networking
+		bool "Enable feed networking"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"networking\" feed at ../qca/feeds/networking.
+
+	config FEED_luci
+		bool "Enable feed luci"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"luci\" feed at ../qca/feeds/luci.
+
+	config FEED_routing
+		bool "Enable feed routing"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"routing\" feed at ../qca/feeds/routing.
+
+	config FEED_nss
+		bool "Enable feed nss"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"nss\" feed at ../qca/feeds/nss.
+
+	config FEED_nss_host
+		bool "Enable feed nss_host"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"nss_host\" feed at ../qca/feeds/nss-host.
+
+	config FEED_nss_ec
+		bool "Enable feed nss_ec"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"nss_ec\" feed at ../qca/feeds/nss_ec.
+
+	config FEED_nss_ea
+		bool "Enable feed nss_ea"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"nss_ea\" feed at ../qca/feeds/nss_ea.
+
+	config FEED_wlan_open
+		bool "Enable feed wlan_open"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"wlan_open\" feed at ../qca/feeds/wlan-open.
+
+	config FEED_alljoyn
+		bool "Enable feed alljoyn"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"alljoyn\" feed at ../qca/feeds/alljoyn.
+
+	config FEED_wlan_10_4
+		bool "Enable feed wlan_10_4"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"wlan_10_4\" feed at ../qca/feeds/wlan_10_4.
+
+	config FEED_qca_10_4
+		bool "Enable feed qca_10_4"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"qca_10_4\" feed at ../qca/feeds/qca_10_4.
+
+	config FEED_art2
+		bool "Enable feed art2"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"art2\" feed at ../qca/feeds/art2.
+
+	config FEED_athtestcmd
+		bool "Enable feed athtestcmd"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"athtestcmd\" feed at ../qca/feeds/athtestcmd.
+
+	config FEED_wapid
+		bool "Enable feed wapid"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"wapid\" feed at ../qca/feeds/wapid.
+
+	config FEED_qcom_utils_internal
+		bool "Enable feed qcom_utils_internal"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"qcom_utils_internal\" feed at ../qca/feeds/qcom-utils-internal.
+
+	config FEED_shortcut_fe
+		bool "Enable feed shortcut_fe"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"shortcut_fe\" feed at ../qca/feeds/shortcut-fe.
+
+	config FEED_qca_mcs
+		bool "Enable feed qca_mcs"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"qca_mcs\" feed at ../qca/feeds/qca-mcs.
+
+	config FEED_qca_lib
+		bool "Enable feed qca_lib"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"qca_lib\" feed at ../qca/feeds/qca-lib.
+
+	config FEED_apple_homekit
+		bool "Enable feed apple_homekit"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"apple_homekit\" feed at ../qca/feeds/apple-homekit.
+
+	config FEED_ieee1905_security
+		bool "Enable feed ieee1905_security"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"ieee1905_security\" feed at ../qca/feeds/ieee1905-security.
+
+	config FEED_hyfi
+		bool "Enable feed hyfi"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"hyfi\" feed at ../qca/feeds/hyfi.
+
+	config FEED_qca_plc
+		bool "Enable feed qca_plc"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"qca_plc\" feed at ../qca/feeds/qca-plc.
+
+	config FEED_whc
+		bool "Enable feed whc"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"whc\" feed at ../qca/feeds/whc.
+
+	config FEED_sigma_dut_10_4
+		bool "Enable feed sigma_dut_10_4"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"sigma_dut_10_4\" feed at ../qca/feeds/sigma-dut-10.4.
+
+	config FEED_weave
+		bool "Enable feed weave"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"weave\" feed at ../qca/feeds/weave.
+
+	config FEED_bluetopia
+		bool "Enable feed bluetopia"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"bluetopia\" feed at ../qca/feeds/bluetopia.
+
+	config FEED_wigig_utils
+		bool "Enable feed wigig_utils"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"wigig_utils\" feed at ../qca/feeds/wigig-utils.
+
+	config FEED_wigig_firmware
+		bool "Enable feed wigig_firmware"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"wigig_firmware\" feed at ../qca/feeds/wigig-firmware.
+
+	config FEED_streamboost3
+		bool "Enable feed streamboost3"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"streamboost3\" feed at ../qca/feeds/streamboost3.
+
+	config FEED_lte_cm
+		bool "Enable feed lte_cm"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"lte_cm\" feed at ../qca/feeds/lte-cm.
+
+	config FEED_ssdk
+		bool "Enable feed ssdk"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"ssdk\" feed at ../qca/feeds/ssdk.
+
+	config FEED_bluetooth
+		bool "Enable feed bluetooth"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"bluetooth\" feed at ../qca/feeds/bluetooth.
+
+	config FEED_zigbee
+		bool "Enable feed zigbee"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"zigbee\" feed at ../qca/feeds/zigbee.
+
+	config FEED_ioe_bridges
+		bool "Enable feed ioe_bridges"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"ioe_bridges\" feed at ../qca/feeds/ioe-bridges.
+
+	config FEED_qca_hk
+		bool "Enable feed qca_hk"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"qca_hk\" feed at ../qca/feeds/qca_hk.
+
+	config FEED_csrmesh
+		bool "Enable feed csrmesh"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"csrmesh\" feed at ../qca/feeds/csrmesh.
+
+	config FEED_sigma_dut
+		bool "Enable feed sigma_dut"
+		depends on PER_FEED_REPO
+		help
+		 Enable the \"sigma_dut\" feed at ../qca/feeds/sigma-dut.
+

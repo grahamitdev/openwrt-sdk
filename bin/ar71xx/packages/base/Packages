@@ -1,0 +1,40 @@
+Package: hello_ubus
+Version: 1
+Depends: libc, libmosquitto, libcyassl, libpthread, librt, libubus, liblua, libblobmsg-json, libuci, libsqlite3, libubox, libustream-cyassl, libjson-c, jshn, libopenssl
+Source: package/hello_ubus
+Section: utils
+Architecture: ar71xx
+Installed-Size: 3206
+Filename: hello_ubus_1_ar71xx.ipk
+Size: 3918
+MD5Sum: c8525b2b9e6b9ad6a30a21d5983cf5dd
+SHA256sum: 3c3db0305494c4bbe6a8ce74203048ddc80c6a211af1585dcd1dfbaaa1870a06
+Description:  hello ubus
+
+Package: helloworld
+Version: 1
+Depends: libc
+Source: package/helloworld
+Section: application
+Architecture: ar71xx
+Installed-Size: 1287
+Filename: helloworld_1_ar71xx.ipk
+Size: 1955
+MD5Sum: f374c89fe3c2b5804730358e05ad5dfb
+SHA256sum: 25d09fb2bf987bdb18306da5dbd6e638ed0f77fdf656e51c638609564acc7b0d
+Description:  It is walter first package demo.
+
+Package: zigbeeservice
+Version: 1
+Depends: libc, libmosquitto, libcyassl, libpthread, librt, libubus, liblua, libblobmsg-json, libuci, libsqlite3, libubox, libustream-cyassl, libjson-c, jshn, libopenssl
+Source: package/zigbeeservice
+License: GPLv2 GPLv2+
+Section: net
+Architecture: ar71xx
+Installed-Size: 510571
+Filename: zigbeeservice_1_ar71xx.ipk
+Size: 510422
+MD5Sum: 48f1137281f7f91da4ebff45014d34af
+SHA256sum: 36ab82c6cba713092176588ba78aeadab756fbcd4f262f3ffe687006de009a1c
+Description:  This package is a bridge connectting a Zigbee device through RS-232 serial port
+

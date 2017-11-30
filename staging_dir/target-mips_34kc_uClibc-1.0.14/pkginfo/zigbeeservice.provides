@@ -1,5 +1,7 @@
 libblobmsg_json.so
 libc.so.1
+libcares.so.2
+libcares.so.2.1.0
 libcrypt-1.0.14.so
 libcrypt.so.1
 libcrypto.so.1.0.0
@@ -12,6 +14,8 @@ libjson-c.so.2.0.1
 liblua.so.5.1.5
 libm-1.0.14.so
 libm.so.1
+libmosquitto.so
+libmosquitto.so.1
 libpthread-1.0.14.so
 libpthread.so.1
 librt-1.0.14.so

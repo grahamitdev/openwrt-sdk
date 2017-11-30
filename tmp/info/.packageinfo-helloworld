@@ -1,0 +1,18 @@
+Source-Makefile: package/helloworld/Makefile
+Package: helloworld
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: application
+Category: app
+Title: helloworld -- prints a snarky message.
+Maintainer: 
+Source: 
+Type: ipkg
+Description:         It is walter first package demo.
+
+@@
+
+

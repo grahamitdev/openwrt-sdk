@@ -1,0 +1,19 @@
+Source-Makefile: package/zigbeeservice_look/Makefile
+Package: zigbeeservice
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libmosquitto +libcyassl +libpthread +librt +libubus +liblua +libblobmsg-json + libuci +libsqlite3 +libubox +libustream-cyassl +libjson-c +jshn +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: zha gateway
+Maintainer: 
+Source: 
+License: GPLv2 GPLv2+
+Type: ipkg
+Description:  This package is a bridge connectting a Zigbee device through RS-232 serial port
+
+@@
+
+

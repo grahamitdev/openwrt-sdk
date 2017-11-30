@@ -1,0 +1,8 @@
+Package: helloworld
+Version: 1
+Depends: libc
+Source: package/helloworld
+Section: application
+Architecture: ar71xx
+Installed-Size: 1287
+Description:  It is walter first package demo.

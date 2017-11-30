@@ -1,0 +1,3 @@
+package-$(CONFIG_PACKAGE_helloworld) += helloworld
+package-$(CONFIG_PACKAGE_hello_ubus) += hello_ubus
+package-$(CONFIG_PACKAGE_zigbeeservice) += zigbeeservice
